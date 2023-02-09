@@ -5,83 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"   
+     rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+     rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles..css"/>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="">Web studio</a>
-        <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+  <body class="body">
+    <header class="page-header">
+      <nav class="conteiner main-nav">
+        <a href="./index.html" class="logo"><span class="web">Web</span> studio</a>
+        <ul class="sait-link">
+          <li class="list"><a href="" class="current">Студія</a></li>
+          <li class="list"><a href="./portfolio.html">Портфоліо</a></li>
+          <li class="list"><a href="">Контакти</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="">info@devstudio.com</a></li>
-        <li><a href=""> 096 111 11 11</a></li>
+      
+      <ul class="info">
+        <li class="list"><a href="" class="info-link">info@devstudio.com</a></li>
+        <li class="list"><a href="" class="info-link"> 096 111 11 11</a></li>
       </ul>
+    </nav>
     </header>
-    <section>
+    <main>
+    <section class="hero">
       <img src="./imegen/Bg.jpg" alt="чорний квадрат" width="1600" />
-      <h1>Ефективні рішення для вашого бізнесу</h1>
+      <h1 class="title-hero">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br> ВАШОГО БІЗНЕСУ</h1>
     </section>
-    <type="button">Замовити послугу</type>
-    <section>
+    <section class="button">
+    <button class="primary button">Замовити послугу</button>
+  </section>
+    <section class="advantage">
+      <div class="conteiner">
       <h2>Переваги</h2>
-
-      <ul>
-        <li>
-          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p>
+      <ul class="advantage-main">
+        <li class="list"> 
+          <svg class="icon astronavt"><use href="./sprait/icons.svg#icon-astronaut-1"></use></svg>
+          <h3 class="advantage-post">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="advantage-text">
             Ідейні міркування, і навіть початок повсякденної роботи з формування
             позиції.
           </p>
         </li>
-        <li>
-          <h3>ПУНКТУАЛЬНІСТЬ</h3>
-          <p>
-            Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
+        <li class="list">
+          <svg class="icon clock"><use href="./css/imagen/symbol-defs.svg#icon-antenna"></use></svg>
+          <h3 class="advantage-post">ПУНКТУАЛЬНІСТЬ</h3>
+          <p class="advantage-text">
+            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
           </p>
         </li>
-        <li>
-          <h3>ПУНКТУАЛЬНІСТЬ</h3>
-          <p>
-            Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
+        <li class="list">
+          <svg class="icon diagrama"><use href="./css/imagen/symbol-defs.svg#icon-diagram"></use></svg>
+          <h3 class="advantage-post">ПЛАНУВАННЯ</h3>
+          <p class="advantage-text">
+            Так само консультація з широким активом значною мірою зумовлює.
           </p>
         </li>
-        <li>
-          <h3>ПЛАНУВАННЯ</h3>
-          <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
-        <li>
-          <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p>
+        <li class="list">
+          <svg class="icon astanavt"><use href="./css/imagen/symbol-defs.svg#icon-astronaut"></use></svg>
+          <h3 class="advantage-post">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p class="advantage-text">
             Значимість цих проблем настільки очевидна, що реалізація планових
             завдань.
           </p>
         </li>
       </ul>
+    </div>
     </section>
-    <section>
+    <section class="work">
       <h2>Чим ми займаємося</h2>
-      <ul>
-        <li>
+      <div class="conteiner"></div>
+      <ul class="work-w">
+        <li class="list">
           <img
-            src="./imegen/peoplemob.jpg"
+            src="./imegen/peoplecom.jpg"
             alt="людина процює за компютером"
             width="370"
           />
         </li>
-        <li>
+        <li class="list">
           <img
             src="./imegen/peoplemob.jpg"
             alt="людина аналізує роботу"
             width="370"
           />
         </li>
-        <li>
+        <li class="list">
           <img
             src="./imegen/peoplegraf.jpg"
             alt="ствопює дизайн матек"
@@ -89,44 +98,73 @@
           />
         </li>
       </ul>
+    </div>
     </section>
-    <section>
-      <h2>Наша команда</h2>
-      <ul>
-        <li>
+    <section class="team">
+      <div class="conteiner team">
+      <h2 class="team-h">Наша команда</h2>
+      <ul class="team-ul">
+        <li class="list">
           <img src="./imegen/Team/ID.jpg" width="270" alt="гніда" />
-          <h3>Ігор Дем'яненко</h3>
-          <p>Designer</p>
+          <h3 class="team-title">Ігор Дем'яненко</h3>
+          <p class="team-text">Designer</p>
         </li>
-        <li>
+        <li class="list">
           <img src="./imegen/Team/OR.jpg" width="270" alt="шмига" />
-          <h3>Ольга Рєпіна</h3>
-          <p>Developer</p>
+          <h3 class="team-title">Ольга Рєпіна</h3>
+          <p class="team-text">Developer</p>
         </li>
-        <li>
+        <li class="list">
           <img src="./imegen/Team/MT.jpg" width="270" alt="піжон" />
-          <h3>Микола Тарасов</h3>
-          <p>Marketing</p>
+          <h3 class="team-title">Микола Тарасов</h3>
+          <p class="team-text">Marketing</p>
         </li>
-        <li>
+        <li class="list">
           <img src="./imegen/Team/ME.jpg" width="270" alt="піздюк" />
-          <h3>Михайло Єрмаков</h3>
-          <p>UI Designer</p>
+          <h3 class="team-title">Михайло Єрмаков</h3>
+          <p class="team-text">UI Designer</p>
         </li>
       </ul>
+    </div>
     </section>
-    <section>
+  <section class="clients">
+    <h2>Постійні клієнти</h2>
+    <div class="conteiner">
+<ul>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 1.svg" width="170" alt="клиентодин"></a></li>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 2.svg" width="170" alt="клиентдва"></a></li>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 3.svg" width="170" alt="клиенттри"></a></li>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 4.svg" width="170" alt="клиентчетири"></a></li>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 5.svg" width="170" alt="клиентпять"></a></li>
+  <li class="list"><a href=""> <img src="./css/imagen/clients/Client 6.svg" width="170" alt="клиентшесть"></a></li>
+</ul>
+</div>
+  </section>
+  </main>
+  <div class="conteiner">
+    <section class="footer">
       <footer>
-        <img src="./imegen/Footer bg.jpg" width="1600" />
-        <a href="">Web Studio></a>
-        <address>
-          <ul>
-            <li>м. Київ, пр-т Лесі Українки, 26</li>
-            <li><a href="">info@devstudio.com</a></li>
-            <li><a href="">096 111 11 11</a></li>
+        <div class="first-address">
+        <a href="./index.html" class="logo-b"><span class="web">Web</span> Studio</a>
+        <address class="footer-address">
+          <ul class="footer-ul">
+            <li class="list" ><a href="" class="foter-adress"> м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="list"><a href="" class="footer-email">info@devstudio.com</a></li>
+            <li class="list"><a href="" class="footer-tel">096 111 11 11</a></li>
           </ul>
         </address>
+        </div>
+        <div class="social-link">
+        <h3 class="comin">ПРИЄДНУЙСЯ</h3>
+        <ul class=comin-ul>
+          <li class="list"><a href=""><img src="./css/imagen/social-link footer/insta (2).svg"></a></li>
+          <li class="list"><a href=""><img src="./css/imagen/social-link footer/tw.svg"></a></li>
+          <li class="list"><a href=""><img src="./css/imagen/social-link footer/fb2.svg"></a></li>
+          <li class="list"><a href=""><img src="./css/imagen/social-link footer/in2.svg"></a></li>
+        </ul>
+        </div>
       </footer>
     </section>
+  </div>
   </body>
 </html>
